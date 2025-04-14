@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/NavBar";
 import FileUpload from "./pages/FileUpload";
@@ -12,9 +12,7 @@ function App() {
         <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
-        {/* <Route path="/" element={<Navigate to="/upload" />} /> */}
          <Route path="/upload" element={<FileUpload />} />
-         {/* <Route path="/blocks" element={<BlockListPage />} /> */}
         <Route path="/block/:id" element={<BlockDetailsPage />} /> 
          <Route path="/file/:id" element={<FileDetails />} />
         FileDetails

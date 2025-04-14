@@ -2,7 +2,7 @@
 import axios from 'axios';
 import { File, Block, BlocksQueryParams, BlockDetail } from '../types';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -22,7 +22,7 @@ export const getFileById = async (id: number): Promise<{success : boolean ,file 
   return response.data;
 };
 
-export const uploadFile = async (file: any): Promise<{success :boolean ,message :string , error ? :string , fileId?:number}> => {
+export const uploadFile = async (file: any): Promise<{success :boolean ,message :string ,blocksProcessed? : any , error ? :string , fileId?:number}> => {
   const formData = new FormData();
   formData.append('file', file);
   

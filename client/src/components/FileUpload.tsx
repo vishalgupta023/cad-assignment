@@ -36,7 +36,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUploaded }) => {
       const response = await uploadFile(selectedFile);
       
       if (response.success && response.fileId) {
-        toast.success(`File uploaded successfully! ${response.blocksProcessed} blocks extracted.`);
+        toast.success(`File uploaded successfully! ${response?.blocksProcessed} blocks extracted.`);
         onFileUploaded(response.fileId);
         setSelectedFile(null);
       } else {
