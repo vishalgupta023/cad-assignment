@@ -99,7 +99,7 @@ npm run preview
 🔗 Postman API Collection
 You can find and test all backend API endpoints using this shared Postman collection:
 
-👉 View Postman Collection
+👉 View Postman Collection :https://www.postman.com/jgswdhs/backend/request/v1x5rlu/get-all-files?action=share&source=copy-link&creator=43257483
 
 📧 Submission
 Please submit your GitHub repository link and video demonstration to [recruiting email] with the subject:
